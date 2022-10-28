@@ -1,0 +1,31 @@
+.herosection {
+    
+}
+
+.hero {
+    background-image: url("../images/HERO1BW.jpg");
+    background-attachment: fixed;
+    background-position: left;
+    background-size: cover;
+    height: 100%;
+    width: 40%;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.brandon-krussow {
+    font-size: 45px;
+}
+
+.header nav {
+    float: right;
+    padding-top: 15px;
+    margin-right: 15px;
+    font-size: 15px;
+}
