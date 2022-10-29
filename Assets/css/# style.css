@@ -1,5 +1,8 @@
-.herosection {
-    
+.hero_section {
+    background-image: url("../images/HERO1BW.jpg");
+    background-attachment: fixed;
+    background-position: left;
+    background-size: cover;
 }
 
 .hero {
@@ -7,8 +10,6 @@
     background-attachment: fixed;
     background-position: left;
     background-size: cover;
-    height: 100%;
-    width: 40%;
 }
 
 .header {
