@@ -1,15 +1,17 @@
 .hero {
-    width: 700px;
-    height: 900px;
+    width: 40vw;
+    height: 98vh;
     position:fixed;
-    border: 5px solid black;    
     background-image: url("../images/HERO1BW.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    margin-left: 0;
 }
 
 .page-content {
     margin-left: 40%;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 .brandon-krussow {
