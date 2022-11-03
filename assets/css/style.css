@@ -90,12 +90,11 @@ a:hover {
 
 .banner {
     height: 200px;
-    width: 400px;
+    width: 1050px;
     display: inline-block;
-    background-image: url("../images/regionals.jpg");
-    background-image: url("../images/ptq.jpg");
-    background-image: url("../images/protour.jpg");
+    background-image: url("../images/regionals.jpg"), url("../images/ptq.jpg"), url("../images/protour.jpg");
     background-repeat: no-repeat;
+    background-size: 350px, 350px, 350px;
     padding-top: 2vh;
 }
 
