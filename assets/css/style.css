@@ -20,6 +20,7 @@
 
 .brandon-krussow {
     font-size: 50px;
+    font-weight: bolder;
     padding-left: 2vh;
     padding-right: 6vh;
     display: inline-block;
@@ -61,9 +62,11 @@ a:hover {
     padding-left: 40vh;
     color: white;
     font-style: italic;
-    font-size: 25px;
+    font-size: 35px;
     animation-name: appear; 
-    animation-duration: 3s;
+    animation-delay: .5s;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
 }
 
 .philosophy-2 {
@@ -72,14 +75,16 @@ a:hover {
     padding-left: 40vh;
     color: white;
     font-style: italic;
-    font-size: 25px;
+    font-size: 35px;
     animation-name: appear;
-    animation-duration: 3s;
-    animation-delay: 3s;
+    animation-duration: 2.5s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
 }
 
 .aboutsection {
     padding-bottom: 15vh;
+    font-size: 20px;
 }
 
 .worksection {
