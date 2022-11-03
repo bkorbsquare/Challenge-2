@@ -12,6 +12,7 @@
     margin-left: 40%;
     padding-left: 2vw;
     padding-right: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
@@ -83,20 +84,34 @@ a:hover {
 }
 
 .aboutsection {
-    padding-bottom: 15vh;
+    padding-bottom: 2vh;
     font-size: 20px;
+}
+
+.banner {
+    height: 200px;
+    width: 400px;
+    display: inline-block;
+    background-image: url("../images/regionals.jpg");
+    background-image: url("../images/ptq.jpg");
+    background-image: url("../images/protour.jpg");
+    background-repeat: no-repeat;
+    padding-top: 2vh;
 }
 
 .worksection {
     padding-bottom: 15vh;
+    font-size: 20px;
 }
 
 .resumesection {
     padding-bottom: 15vh;
+    font-size: 20px;
 }
 
 .contactsection {
     padding-bottom: 5vh;
+    font-size: 20px;
 }
 
 .footer {
