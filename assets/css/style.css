@@ -80,7 +80,7 @@ a:hover {
     font-size: 35px;
     animation-name: appear;
     animation-duration: 2.5s;
-    animation-delay: 2.5s;
+    animation-delay: 1.5s;
     animation-fill-mode: forwards;
 }
 
@@ -106,9 +106,18 @@ a:hover {
     font-size: 20px;
 }
 
+.m1img {
+    height: 650px;
+    width: 350px;
+}
+
 .resumesection {
     padding-bottom: 15vh;
     font-size: 20px;
+}
+
+.resumeimg {
+    height: 650px;
 }
 
 .contactsection {
