@@ -15,7 +15,7 @@ On GitHub.com, navigate to the main page of the repository. Above the list of fi
 
 Use this project as a reference when building your portfolio.
 
-![](/Module-2-Challenge/assets/images/challenge2ss.jpg)
+![image](https://github.com/bkorbsquare/Module-2-Challenge/blob/main/assets/images/challenge2ss.jpg)
 
 ## Credits
 
