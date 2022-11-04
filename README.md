@@ -5,7 +5,7 @@
 - This code displays my portfolio.
 - I wanted to deploy this site so that potential employers know valuable information about me.
 - I coded the html & css from scratch.
-- Given more time I would add more flex boxes and media queries.
+- Given more time I would add more flex boxes and media queries, and flesh out the comments.
 
 ## Installation
 
