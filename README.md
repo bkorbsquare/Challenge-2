@@ -17,6 +17,9 @@ Use this project as a reference when building your portfolio.
 
 ![image](https://github.com/bkorbsquare/Module-2-Challenge/blob/main/assets/images/challenge2ss.jpg)
 
+## Deployed Site
+https://bkorbsquare.github.io/Module-2-Challenge/
+
 ## Credits
 
 Thanks to the AskBCS team (https://bootcampspot.com/askbcs/support) for all their help and patience.
