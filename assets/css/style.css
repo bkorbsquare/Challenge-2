@@ -1,3 +1,4 @@
+/*Style and position of the Hero image*/
 .hero {
     width: 40vw;
     height: 98vh;
@@ -8,18 +9,18 @@
     margin-left: 0;
     border-radius: 8px;
 }
-
+/*Style and position of the main content*/
 .page-content {
     margin-left: 40%;
     padding-left: 2vw;
-    padding-right: 2vw;
+    padding-right: 1vw;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .header {
     text-align: center;
 }
-
+/*Style and position of the main heading*/
 .brandon-krussow {
     font-size: 50px;
     font-weight: bolder;
@@ -27,7 +28,7 @@
     padding-right: 6vh;
     display: inline-block;
 }
-
+/*Style and position of navigation bar*/
 nav {
     display: inline-block;
     font-size: 25px;
@@ -52,16 +53,16 @@ a:hover {
     -moz-box-flex: 5px 5px;
     opacity: 1.0;
 }
-
+/*Text animation for the philosophy statements*/
 @keyframes appear {
     from {color:white}
     to {color:black}
 }
-
+/*Style and position of the philosophy statements*/
 .philosophy-1 {
+    text-align: center;
     padding-top: 25vh;
     padding-bottom: 10vh;
-    padding-left: 40vh;
     color: white;
     font-style: italic;
     font-size: 35px;
@@ -72,9 +73,9 @@ a:hover {
 }
 
 .philosophy-2 {
+    text-align: center;
     padding-top: 10vh;
     padding-bottom: 25vh;
-    padding-left: 40vh;
     color: white;
     font-style: italic;
     font-size: 35px;
@@ -83,15 +84,16 @@ a:hover {
     animation-delay: 1.5s;
     animation-fill-mode: forwards;
 }
-
+/*Style and position of the About section*/
 .aboutsection {
     padding-bottom: 2vh;
     font-size: 20px;
 }
-
+/*Style and position of the image banner*/
 .banner1 {
     height: 200px;
-    width: 1050px;
+    width: 100%;
+    max-width: 1050px;
     display: inline-block;
     background-image: url("../images/regionals.jpg"), url("../images/ptq.jpg"), url("../images/protour.jpg");
     background-repeat: no-repeat;
@@ -100,7 +102,7 @@ a:hover {
     padding-top: 2vh;
     border-radius: 8px;
 }
-
+/*Style and position of the Work section*/
 .worksection {
     padding-top: 15vh;
     padding-bottom: 15vh;
@@ -121,7 +123,7 @@ a:hover {
     height: 650px;
     width: 335px;
 }
-
+/*Style and position of the Resume section*/
 .resumesection {
     padding-bottom: 15vh;
     font-size: 20px;
@@ -130,7 +132,7 @@ a:hover {
 .resumeimg {
     height: 650px;
 }
-
+/*Style and position of the Contact section*/
 .contactsection {
     padding-bottom: 5vh;
     font-size: 20px;
@@ -140,3 +142,19 @@ a:hover {
     text-align: center;
     padding-bottom: 5vh;
 }
+/*Dynamic response to smaller screen size*/
+@media screen and (max-width: 768px) {
+    .hero {
+      width: 100%;
+      position: relative;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .page-content {
+        margin-left: 0;
+    }
+  }
+
+
+    
