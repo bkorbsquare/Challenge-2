@@ -1,13 +1,13 @@
 /*Style and position of the Hero image*/
 .hero {
     width: 40vw;
-    height: 98vh;
+    height: 100vh;
     position:fixed;
-    background-image: url("../images/HERO1BW.jpg");
+    background-image: url("../images/Alumni3CBW.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 0;
-    border-radius: 8px;
+    border-radius: 15px;
 }
 /*Style and position of the main content*/
 .page-content {
