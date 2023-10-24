@@ -28,31 +28,6 @@
     padding-right: 6vh;
     display: inline-block;
 }
-/*Style and position of navigation bar*/
-nav {
-    display: inline-block;
-    font-size: 25px;
-}
-
-li {
-    display: inline-block;
-    margin-right: 2vh;
-    list-style-type: none;
-    padding-top: 2vh;
-}
-
-a {
-    color: black;
-    text-decoration: none;
-    padding-right: 1vh;
-    opacity: .5;
-}
-
-a:hover {
-    background-color: pink;
-    -moz-box-flex: 5px 5px;
-    opacity: 1.0;
-}
 
 /*Style and position of the About section*/
 .aboutsection {
@@ -72,27 +47,20 @@ a:hover {
     padding-top: 2vh;
     border-radius: 8px;
 }
-/*Style and position of the Work section*/
-.worksection {
-    padding-top: 15vh;
-    padding-bottom: 15vh;
-    font-size: 20px;
+
+.image-container {
+    width: 55vw; /* Define the width of the container as needed */
+    height: 60vh; /* Define the height of the container as needed */
+    display: flex;
 }
 
-.m1img {
-    height: 650px;
-    width: 335px;
+.image-container img {
+    flex: 1; /* Make the images fill the available space equally */
+    object-fit: cover;
+    max-width: 100%; /* Limit the image's width to the container width */
+    max-height: 100%; /* Limit the image's height to the container height */
 }
 
-.m2img {
-    height: 650px;
-    width: 335px;
-}
-
-.m3img {
-    height: 650px;
-    width: 335px;
-}
 /*Style and position of the Resume section*/
 .resumesection {
     padding-bottom: 15vh;
@@ -178,10 +146,9 @@ a:hover {
 /* Styles for the text animation */
 .philosophy-1 {
     text-align: center;
-    padding-top: 25vh;
+    padding-top: 10vh;
     padding-bottom: 10vh;
-    font-style: italic;
-    font-size: 35px;
+    font-size: 50px;
     animation-name: appear;
     animation-delay: 0.5s;
     animation-duration: 2.5s;
@@ -191,9 +158,8 @@ a:hover {
 .philosophy-2 {
     text-align: center;
     padding-top: 10vh;
-    padding-bottom: 25vh;
-    font-style: italic;
-    font-size: 35px;
+    padding-bottom: 10vh;
+    font-size: 50px;
     animation-name: appear;
     animation-duration: 2.5s;
     animation-delay: 1.5s;
