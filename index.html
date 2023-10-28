@@ -6,6 +6,7 @@
 <!--Container for metadata-->
 <head>
     <meta charset="UTF-8">
+    <!--Link to favicon-->
     <link rel="icon" href="assets/images/bkfavicontransparent.png"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,8 +16,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- Link to custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- Link to JavaScript file -->
+    <!-- Link to main JavaScript file -->
     <script defer src="./assets/js/script.js"></script>
+    <!--Links to JavaScript Templates-->
+    <script defer src="./assets/js/templates/about.js"></script>
+    <script defer src="./assets/js/templates/philosophy.js"></script>
+    <script defer src="./assets/js/templates/projects.js"></script>
+    <script defer src="./assets/js/templates/resume.js"></script>
     <title>Brandon's Portfolio</title>
 </head>
 
@@ -42,6 +48,7 @@
                         </ul>                        
                     </div>
                 </nav>
+                <!--The clickable light/dark theme switch-->
                 <div class="theme-switch">
                     <label class="switch">
                         <input type="checkbox" id="theme-switcher">
@@ -49,54 +56,13 @@
                     </label>
                 </div>
         </header>
-        <!--The first statement and it's style class-->
-        <article class="philosophy-1">
-            <p>
-                Efficiency is beauty
-            </p>
-        </article>
-        <!--The second statement and it's style class-->
-        <article class="philosophy-2">
-            <p>
-                Progress is hope
-            </p>
-        </article>
-        <!-- Handlebars templates -->
-        <div id="content">
-            <!-- This div will be populated by Handlebars -->
-        </div>
 
-        <!--The About section and it's style class-->
-        <article id="about" class="aboutsection">
-            <h2 class="About"><b>About</b></h2>
-                <p2 class="p2">
-                    I'm studying coding right now. I recently obtained a Full-Stack Web Development Certificate from the University of Minnesota, as well as a CS50 (Introduction to Computer Science) Certificate from Harvard University. In my free time I play competitive card games. 
-                </p2>
-        </article>
-        <!--The Banner section and it's style class-->
-        <div class="banner1"></div>
-        <!--The Work section and it's style class-->
-        <h2 class="Work"><b>Projects</b></h2>
-        <article id="work" class="image-container">
-            <!--The clickable images of webpages and they're style classes-->
-            <a href="https://salty-ridge-35552.herokuapp.com/">
-                <img class="m1img" src="assets/images/project3.png" alt="website screenshot">
-            </a>
-            <a href="https://bkorbsquare.github.io/Module-5-Challenge/">
-                <img class="m2img" src="assets/images/Module-5-Challengescreenshotbw.jpg" alt="website screenshot">
-            </a>
-        </article>
-        <!--The Resume section and it's style class-->
-        <article id="resume" class="resumesection">
-            <h2 class="Resume"><b>Resume</b></h2>
-                <!--The clickable image of the resume and it's style class-->
-                <a href="assets/images/bkrussowresume2.0.pdf" download>
-                    <img class="resumeimg" src="assets/images/resumeupdatebw.jpg" alt="resume picture">
-                </a>
-                <a href="assets/images/BKrussowReferences (1).pdf" download>
-                    <img class="resumeimg" src="assets/images/references.JPG" alt="references picture">
-                </a>
-        </article>
+        <!--The divs for the different templates-->
+        <div id="philosophy"></div>
+        <div id="about"></div>
+        <div id="projects"></div>
+        <div id="resume"></div>
+
         <!--The Contact section and it's style class-->
         <article id="contact">
             <footer class="footer">

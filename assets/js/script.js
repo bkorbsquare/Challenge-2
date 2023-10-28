@@ -23,56 +23,45 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Collapse text animations on a delay after page load
-document.addEventListener("DOMContentLoaded", function () {
-    const philosophy1 = document.querySelector(".philosophy-1");
-    const philosophy2 = document.querySelector(".philosophy-2");
+let currentSection = "philosophy"; // Initialize with the default section
 
-    // Function to show the statements and start animations
-    function showStatements() {
-        philosophy1.style.display = "block";
-        philosophy2.style.display = "block";
-        // Trigger animations here by adding a class to each element.
-        philosophy1.classList.add("appear");
-        philosophy2.classList.add("appear");
-    }
+const updateSection = (sectionId, template, data) => {
+  // Hide the current section if one is displayed
+  if (currentSection !== "") {
+    document.querySelector(`#${currentSection}`).innerHTML = "";
+  }
 
-    // Show the statements when the page is loaded
-    showStatements();
+  // Load the new template into the section
+  document.querySelector(`#${sectionId}`).innerHTML = template(data);
 
-    // Hide the statements after X time
-    setTimeout(function () {
-        philosophy1.style.display = "none";
-        philosophy2.style.display = "none";
-    }, 4000); // Adjust the time according to your animation duration
-});
+  // Update the current section
+  currentSection = sectionId;
 
-// Load templates after a delay
-document.addEventListener("DOMContentLoaded", function() {
-    // Load the Philosophy template on page load
-    document.querySelector("#philosophy").innerHTML = philosophyTemplate(philosophyData);
-
-    // Load the About template after a delay (e.g., 6 seconds)
+  // If loading the Philosophy section, set a timeout (e.g., 6 seconds)
+  if (sectionId === "philosophy") {
     setTimeout(function() {
-        document.querySelector("#about").innerHTML = aboutTemplate(aboutData);
-    }, 6000);
+      updateSection("about", aboutTemplate, aboutData);
+    }, 4000);
+  }
+};
+
+// Event listener for the Philosophy section on page load
+document.addEventListener("DOMContentLoaded", function() {
+  updateSection("philosophy", philosophyTemplate, philosophyData);
 });
 
-// Load templates on click
+// Event listeners for the other sections
 const aboutLink = document.querySelector("#about-link");
 aboutLink.addEventListener("click", function() {
-    // Load the About template when the "About" link is clicked
-    document.querySelector("#about").innerHTML = aboutTemplate(aboutData);
+  updateSection("about", aboutTemplate, aboutData);
 });
 
 const projectsLink = document.querySelector("#projects-link");
 projectsLink.addEventListener("click", function() {
-    // Load the Projects template when the "Projects" link is clicked
-    document.querySelector("#projects").innerHTML = projectsTemplate(projectsData);
+  updateSection("projects", projectsTemplate, projectsData);
 });
 
 const resumeLink = document.querySelector("#resume-link");
 resumeLink.addEventListener("click", function() {
-    // Load the Resume template when the "Resume" link is clicked
-    document.querySelector("#resume").innerHTML = resumeTemplate(resumeData);
+  updateSection("resume", resumeTemplate, resumeData);
 });

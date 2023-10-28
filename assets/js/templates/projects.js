@@ -1,10 +1,8 @@
 const projectsTemplate = Handlebars.compile(`
     <h2>{{headerText}}</h2>
-    <ul>
         {{#each projectsItems}}
-            <li class="{{effectClass}}">{{text}}</li>
+            <div class="{{effectClass}}">{{text}}</div>
         {{/each}}
-    </ul>
 `);
 
 const projectsData = {

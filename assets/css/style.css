@@ -144,7 +144,7 @@
 }
 
 /* Styles for the text animation */
-.philosophy-1 {
+.effect1 {
     text-align: center;
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -155,7 +155,7 @@
     animation-fill-mode: forwards;
 }
 
-.philosophy-2 {
+.effect2 {
     text-align: center;
     padding-top: 10vh;
     padding-bottom: 10vh;
