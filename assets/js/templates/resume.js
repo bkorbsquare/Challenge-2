@@ -13,12 +13,12 @@ const resumeData = {
         { 
             link: "https://salty-ridge-35552.herokuapp.com/",
             image: "project3.png",  
-            alt: "Website Screenshot 1"
+            alt: "assets/images/project3.png"
         },
         {
             link: "https://bkorbsquare.github.io/Module-5-Challenge/",
             image: "Module-5-Challengescreenshotbw.jpg", 
-            alt: "Website Screenshot 2"
+            alt: "assets/images/Module-5-Challengescreenshotbw.jpg"
         }
     ]
 };
