@@ -23,7 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-let currentSection = "philosophy"; // Initialize with the default section
+// Initialize with the default section
+let currentSection = "philosophy"; 
 
 const updateSection = (sectionId, template, data) => {
   // Hide the current section if one is displayed

@@ -1,24 +1,26 @@
 const resumeTemplate = Handlebars.compile(`
     <h2>{{headerText}}</h2>
-        {{#each resumeItems}}
-            <a href="{{link}}">
-                <img src="{{image}}" alt="{{alt}}"> 
-            </a>
-        {{/each}}
+    {{#each resumeItems}}
+        <a href="{{link}}">
+            {{#if image}}
+                <img src="{{image}}" alt="{{alt}}" class="resumePhotos">
+            {{/if}}
+        </a>
+    {{/each}}
 `);
 
 const resumeData = {
     headerText: "My resume & references:",
     resumeItems: [
         { 
-            link: "https://salty-ridge-35552.herokuapp.com/",
-            image: "project3.png",  
-            alt: "assets/images/project3.png"
+            link: "https://docs.google.com/document/d/166fgrYHNgISQNwGMRPgH0b6Dv8B2yhsfOVyonBP5-Kc/edit?usp=sharing",
+            image: "assets/images/resume.PNG",  
+            alt: "A clickable picture of my resume, linking to the Google Doc."
         },
         {
-            link: "https://bkorbsquare.github.io/Module-5-Challenge/",
-            image: "Module-5-Challengescreenshotbw.jpg", 
-            alt: "assets/images/Module-5-Challengescreenshotbw.jpg"
+            link: "https://docs.google.com/document/d/1OK6qKm88LgER2f6C0p9uyUQgwcYb6X8mqntl_TvoHzM/edit?usp=sharing",
+            image: "assets/images/references.JPG", 
+            alt: "A clickable picture of my references, linking to the Google Doc."
         }
     ]
 };

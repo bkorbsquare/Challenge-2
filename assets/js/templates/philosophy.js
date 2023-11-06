@@ -1,14 +1,16 @@
 const philosophyTemplate = Handlebars.compile(`
-    <h2>{{headerText}}</h2>
+    <div class="centered-elements">
         {{#each philosophyText}}
-            <div class="{{effectClass}}">{{text}}</div>
+            <div class="effect-container">
+                <div class="{{effectClass}}">{{text}}</div>
+            </div>
         {{/each}}
+    </div>
 `);
 
 const philosophyData = {
-    headerText: "My Philosophy:",
     philosophyText: [
         { text: "Efficiency is beauty", effectClass: "effect1" },
         { text: "Progress is hope", effectClass: "effect2" }
-    ]
+    ],
 };
