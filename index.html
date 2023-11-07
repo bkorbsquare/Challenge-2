@@ -28,61 +28,64 @@
 
 <!--Houses all the contents of the document-->
 <body>
-    <!--Styling for the large side image-->
-    <aside class="hero"></aside>
-    <!--The main part of the page and it's style class-->
-    <section class="page-content">
-        <!--The style class for the header element-->
-        <header class="header">
-            <!--The most important heading and it's style class-->
-            <a href="index.html">
-            <h1 class="brandon-krussow"><b>Brandon Krussow</b></h1>
-            </a>
-                <!--The navigation bar and it's clickable links-->
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="container d-flex justify-content-center">
-                        <ul class="navbar-nav">
-                            <li><a class="nav-link btn navbar-btn" id="about-link">About</a></li>
-                            <li><a class="nav-link btn navbar-btn" id="projects-link">Projects</a></li>
-                            <li><a class="nav-link btn navbar-btn" id="resume-link">Resume</a></li>
-                        </ul>                        
-                    </div>
-                </nav>
-                <!--The clickable light/dark theme switch-->
-                <div class="theme-switch">
-                    <label class="switch">
-                        <input type="checkbox" id="theme-switcher">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
-        </header>
-
-        <!--The divs for the different templates-->
-        <div class="templateContainer">
-            <div class="flex-item" id="philosophy"></div>
-            <div class="flex-item" id="about"></div>
-            <div class="flex-item" id="projects"></div>
-            <div class="flex-item" id="resume"></div>
-        </div>
-
-        <!--The Contact section and it's style class-->
-        <article id="contact" class="contact">
-            <footer class="footer">
-                <h2 class="Contact"><b>Contact</b></h2>
-                    <!--The clickable contact links-->
+    <!--The style class for the whole page-->
+    <div class="whole-page">
+        <!--Styling for the large side image-->
+        <aside class="hero"></aside>
+        <!--The main part of the page and it's style class-->
+        <section class="page-content">
+            <!--The style class for the header element-->
+            <header class="header">
+                <!--The most important heading and it's style class-->
+                <a href="index.html">
+                <h1 class="brandon-krussow"><b>Brandon Krussow</b></h1>
+                </a>
+                    <!--The navigation bar and it's clickable links-->
                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
                         <div class="container d-flex justify-content-center">
                             <ul class="navbar-nav">
-                                <li> <a class="nav-link btn navbar-btn" href="tel:+6124327545">612-432-7545</a></li>
-                                <li> <a class="nav-link btn navbar-btn" href="mailto:bkorbsquare@gmail.com">bkorbsquare@gmail.com</a></li>
-                                <li> <a class="nav-link btn navbar-btn" href="https://github.com/bkorbsquare">Github</a></li>
-                                <li> <a class="nav-link btn navbar-btn" href="https://www.linkedin.com/in/brandon-krussow-bb9960151/">Linkedin</a></li>
-                            </ul>
+                                <li><a class="nav-link btn navbar-btn" id="about-link">About</a></li>
+                                <li><a class="nav-link btn navbar-btn" id="projects-link">Projects</a></li>
+                                <li><a class="nav-link btn navbar-btn" id="resume-link">Resume</a></li>
+                            </ul>                        
                         </div>
                     </nav>
-            </footer>
-        </article>
-    </section>
+                    <!--The clickable light/dark theme switch-->
+                    <div class="theme-switch">
+                        <label class="switch">
+                            <input type="checkbox" id="theme-switcher">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+            </header>
+
+            <!--The divs for the different templates-->
+            <div class="templateContainer">
+                <div class="flex-item" id="philosophy"></div>
+                <div class="flex-item" id="about"></div>
+                <div class="flex-item" id="projects"></div>
+                <div class="flex-item" id="resume"></div>
+            </div>
+
+            <!--The Contact section and it's style class-->
+            <article id="contact" class="contact">
+                <footer class="footer">
+                    <h2 class="Contact"><b>Contact</b></h2>
+                        <!--The clickable contact links-->
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <div class="container d-flex justify-content-center">
+                                <ul class="navbar-nav">
+                                    <li> <a class="nav-link btn navbar-btn" href="tel:+6124327545">612-432-7545</a></li>
+                                    <li> <a class="nav-link btn navbar-btn" href="mailto:bkorbsquare@gmail.com">bkorbsquare@gmail.com</a></li>
+                                    <li> <a class="nav-link btn navbar-btn" href="https://github.com/bkorbsquare">Github</a></li>
+                                    <li> <a class="nav-link btn navbar-btn" href="https://www.linkedin.com/in/brandon-krussow-bb9960151/">Linkedin</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                </footer>
+            </article>
+        </section>
+    </div>
 </body>
 
 </html>

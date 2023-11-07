@@ -1,8 +1,17 @@
+.whole-page {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    justify-content: space-between;
+}
+
 /*Style and position of the Hero image*/
 .hero {
     width: 40vw;
     height: 100vh;
     position:fixed;
+    display: flex;
+    flex-direction: column;
     background-image: url("../images/Alumni3CBW.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -20,26 +29,27 @@
     width: 60vw;
     margin-right: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border: 1px solid #000;
     overflow: auto;
 }
 
 .header {
     position: fixed;
+    display: flex;
+    flex-direction: column;
     text-align: center;  
     width: 50vw;
     top: 0%;
     left: 44.59%;
-    border: 1px solid #000;
 }
 
 .footer {
     position: fixed;
+    flex-direction: column;
+    display: flex;
     text-align: center;
     width: 50vw;
     bottom: 0%;;
     left: 44.59%;
-    border: 1px solid #000;
 }
 
 /*Main heading(s)*/
@@ -57,12 +67,12 @@
 
 .templateContainer {
     position: fixed;
+    flex-direction: column;
     margin-top: 20vh;
     margin-bottom: 20vh;
     left: 44.59%;
     width: 50vw;
     height: 64.25vh;
-    border: 1px solid #000;
     overflow: auto;
     display: flex;
     justify-content: space-between;
@@ -76,37 +86,48 @@
 .aboutPhotos {
     width: 32.5%;
     height: 65%; 
-    border: 1px solid #000;
 }
 
 .projectsPhotos {
     width: 49%;
     height: 49%; 
-    padding-bottom: .5vh;
-    border: 1px solid #000;
+    margin-bottom: .5vh;
 }
 
 .resumePhotos {
-    width: 24.8vw; 
-    height: 59vh; 
-    border: 1px solid #000;
+    width: 49%; 
+    height: 98%; 
+    margin-bottom: .5vh;
 }
 
-/*Dynamic response to smaller screen size*/
+/* Adjust for mobile screens */
 @media screen and (max-width: 768px) {
-    .hero {
-      width: 100%;
-      position: relative;
+    .whole-page {
+      flex-direction: column;
     }
-  }
-
-  @media screen and (max-width: 768px) {
+  
     .page-content {
-        margin-left: 0;
+      position: relative;
+      margin-left: 0;
+      width: 100%;
     }
-  }
+  
+    .header, .footer, .hero {
+      position: relative;
+      width: 100%;
+      left: 0;
+    }
+  
+    .templateContainer {
+      position: relative;
+      width: 100%;
+      left: 0;
+      margin-top: 1vh;
+      margin-bottom: 1vh;
+    }
+}
 
-  .navbar-btn {
+.navbar-btn {
     background-color: transparent;
     border-color: #2eb67d;
     color: #2eb67d;
@@ -160,7 +181,6 @@
     flex-direction: column;
     width: 49vw;
     text-align: center;
-    border: 1px solid #000;
 }
 
 /* Styles for the text animation */
@@ -220,8 +240,8 @@ h1 {
 .switch {
     position: relative;
     display: inline-block;
-    width: 3.2vw;
-    height: 3.5vh;
+    width: 60px;
+    height: 33px;
 }
 
 .slider {
