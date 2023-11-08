@@ -24,7 +24,7 @@ To clone and open this repository with GitHub Desktop, follow these steps:
 
 ## Usage
 
-Feel free to use this project as a reference when building your own portfolio. It's a great starting point to create a personal website to showcase your work and skills.
+Feel free to use this project as a reference when building your own portfolio. 
 
 ![Portfolio Screenshot](/assets/images/PortfolioScreenshot.PNG)
 
@@ -36,7 +36,7 @@ You can view the live version of this portfolio at the following link:
 
 ## Credits
 
-I'd like to express my gratitude to the AskBCS team for their continuous help and patience in assisting me in refining my initial concept. Badges used in this README are courtesy of [Shields.io](https://github.com/badges/shields).
+Badges used in this README are courtesy of [Shields.io](https://github.com/badges/shields).
 
 ## License
 
