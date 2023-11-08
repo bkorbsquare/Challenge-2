@@ -1,5 +1,5 @@
 const projectsTemplate = Handlebars.compile(`
-    <h2>{{headerText}}</h2>
+    <h2 class="headerClass">{{headerText}}</h2>
         {{#each projectsItems}}
             <a href="{{link}}">
                 <img src="{{image}}" alt="{{alt}}" class="projectsPhotos"> 

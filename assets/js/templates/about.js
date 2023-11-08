@@ -1,6 +1,6 @@
 // Define your Handlebars template
 const aboutTemplate = Handlebars.compile(`
-    <h2>{{headerText}}</h2>
+    <h2 class="headerClass">{{headerText}}</h2>
     {{#each aboutItems}}
         {{#if text}}
             <div class="aboutText">{{text}}</div>

@@ -1,5 +1,5 @@
 const resumeTemplate = Handlebars.compile(`
-    <h2>{{headerText}}</h2>
+    <h2 class="headerClass">{{headerText}}</h2>
     {{#each resumeItems}}
         <a href="{{link}}">
             {{#if image}}

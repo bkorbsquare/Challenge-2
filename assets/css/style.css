@@ -52,6 +52,11 @@
     left: 44.59%;
 }
 
+.navbar-nav {
+    flex-direction: row;
+    display: flex;
+}
+
 /*Main heading(s)*/
 .brandon-krussow {
     font-size: 5vh;
@@ -63,6 +68,10 @@
     font-size: 5vh;
     font-weight: bolder;
     display: inline-block;
+}
+
+.headerClass {
+    padding: .5vh;
 }
 
 .templateContainer {
@@ -79,29 +88,29 @@
 }
 
 .aboutText {
-    padding-top: 1vh;
-    padding-bottom: 3vh;
+    padding: .5vh;
 }
 
 .aboutPhotos {
-    width: 300px;
-    height: 425px; 
+    width: 32%;
+    height: auto;
+    padding: .5vh;
 }
 
 .projectsPhotos {
-    width: 49%;
-    height: 49%; 
-    margin-bottom: .5vh;
+    width: 45%;
+    height: 45%;
+    padding: .5vh;
 }
 
 .resumePhotos {
-    width: 49%; 
-    height: 98%; 
-    margin-bottom: .5vh;
+    width: 45%; 
+    height: auto; 
+    padding: .5vh;
 }
 
 /* Adjust for mobile screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .whole-page {
       flex-direction: column;
     }
@@ -112,9 +121,10 @@
       width: 100%;
     }
   
-    .header, .footer, .hero {
+    .header, .footer {
       position: relative;
       width: 100%;
+      height: auto;
       left: 0;
     }
   
@@ -122,8 +132,19 @@
       position: relative;
       width: 100%;
       left: 0;
-      margin-top: 1vh;
-      margin-bottom: 1vh;
+      margin-top: .5vh;
+      margin-bottom: .5vh;
+    }
+
+    .projectsPhotos, .resumePhotos {
+        width: 100%;
+        height: auto;
+        padding: .5vh;
+        display: flex;
+    }
+
+    .hero {
+        display: none;
     }
 }
 
@@ -179,7 +200,7 @@
 .centered-elements {
     display: flex;
     flex-direction: column;
-    width: 49vw;
+    width: 100%;
     text-align: center;
 }
 
