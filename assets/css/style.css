@@ -39,6 +39,7 @@
     flex-direction: column;
     text-align: center;  
     width: 50vw;
+    height: 20vh;
     top: 0%;
     left: 44.59%;
 }
@@ -49,7 +50,8 @@
     display: flex;
     text-align: center;
     width: 50vw;
-    bottom: 0%;;
+    height: 20vh;
+    bottom: 0%;
     left: 44.59%;
 }
 
@@ -73,6 +75,7 @@
 
 .headerClass {
     padding: .5vh;
+    font-size: 2.5vh;
 }
 
 .templateContainer {
@@ -82,7 +85,7 @@
     margin-bottom: 20vh;
     left: 44.59%;
     width: 50vw;
-    height: 64.25vh;
+    height: 60vh;
     overflow: auto;
     display: flex;
     justify-content: space-between;
@@ -123,6 +126,7 @@
       position: relative;
       margin-left: 0;
       width: 100%;
+      height: 100vh;
     }
   
     .header, .footer {
@@ -135,6 +139,7 @@
     .templateContainer {
       position: relative;
       width: 100%;
+      height: 52.5vh;
       left: 0;
       margin-top: .5vh;
       margin-bottom: .5vh;
@@ -259,7 +264,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 1vh;
+    padding: .5vh;
 }
 
 .switch {
