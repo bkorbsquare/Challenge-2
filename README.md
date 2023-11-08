@@ -1,7 +1,7 @@
 # Portfolio 
 
-![Created by Brandon Krussow](https://img.shields.io/badge/Created%20by-Brandon%20Krussow-blue?style=for-the-badge)
-![MIT License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
+![Created by Brandon Krussow](https://img.shields.io/badge/Created%20by-Brandon%20Krussow-blue)
+![MIT License](https://img.shields.io/badge/License-MIT-yellow)
 ![Handlebars.js Version 4.7](https://img.shields.io/badge/Handlebars.js-4.7-brightgreen)
 ![Bootstrap Version 5.2](https://img.shields.io/badge/Bootstrap-5.2-blueviolet)
 
