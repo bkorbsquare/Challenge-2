@@ -16,6 +16,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 0;
+    border-radius: 20px;
 }
 
 /*Style and position of the main content*/
@@ -95,18 +96,21 @@
     width: 32%;
     height: auto;
     padding: .5vh;
+    border-radius: 20px;
 }
 
 .projectsPhotos {
     width: 45%;
     height: 45%;
     padding: .5vh;
+    border-radius: 20px;
 }
 
 .resumePhotos {
     width: 45%; 
     height: auto; 
     padding: .5vh;
+    border-radius: 20px;
 }
 
 /* Adjust for mobile screens */
@@ -312,4 +316,8 @@ input:checked + .slider:before {
     -ms-transform: translateX(26px);
     transform: translateX(26px);
     box-shadow: 0 0 1px #ccc; /* Adjust shadow when the switch is checked */
+}
+
+.container {
+    border-radius: 10px;
 }
